@@ -55,9 +55,11 @@ ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
 // Why aren't these two working????
 
-const ctaHeader = document.getElementsByTagName('h1');
+const ctaHeader = document.querySelector('h1');
 ctaHeader.textContent = "DOM Is Awesome";
-const ctaButton = document.getElementsByTagName('cta-text.button');
+ctaHeader.innerHTML = 'DOM<br>IS<br>AWESOME';
+
+const ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = "Get Started";
 
 const mainContentHeader = document.querySelectorAll('h4');
@@ -77,6 +79,16 @@ mainContent[4].textContent = "Vision content elementum magna eros, ac posuere el
 const midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+const contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = "Contact";
+
+const contactContent = document.querySelectorAll('.contact p');
+contactContent[0].textContent = "123 Way 456 Street Somewhere, USA";
+contactContent[1].textContent = "1 (888) 888-8888";
+contactContent[2].textContent = "sales@greatidea.io";
+
+const footerHeader = document.querySelector('footer p');
+footerHeader.textContent = "Copyright Great Idea! 2018";
 
 
 
