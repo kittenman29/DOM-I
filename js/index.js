@@ -41,4 +41,47 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const ctaImg = document.getElementById(
+const multipleSelections = document.querySelectorAll('a');
+multipleSelections[0].textContent = "Services";
+multipleSelections[1].textContent = "Product";
+multipleSelections[2].textContent = "Vision";
+multipleSelections[3].textContent = "Features";
+multipleSelections[4].textContent = "About";
+multipleSelections[5].textContent = "Contact";
+
+const ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+
+// Why aren't these two working????
+
+const ctaHeader = document.getElementsByTagName('h1');
+ctaHeader.textContent = "DOM Is Awesome";
+const ctaButton = document.getElementsByTagName('cta-text.button');
+ctaButton.textContent = "Get Started";
+
+const mainContentHeader = document.querySelectorAll('h4');
+mainContentHeader[0].textContent = "Features";
+mainContentHeader[1].textContent = "About";
+mainContentHeader[2].textContent = "Services";
+mainContentHeader[3].textContent = "Product";
+mainContentHeader[4].textContent = "Vision";
+
+const mainContent = document.querySelectorAll('p');
+mainContent[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+mainContent[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+mainContent[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+mainContent[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+mainContent[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+const midImg = document.getElementById("middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+
+
+
+
+
+
+
+
